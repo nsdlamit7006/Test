@@ -1,0 +1,26 @@
+{
+  "testApp": {
+    "citymaster": {
+      "home": {
+        "title": "Citymasters",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Citymaster",
+        "createOrEditLabel": "Create or edit a Citymaster",
+        "notFound": "No Citymasters found"
+      },
+      "created": "A new Citymaster is created with identifier {{ param }}",
+      "updated": "A Citymaster is updated with identifier {{ param }}",
+      "deleted": "A Citymaster is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Citymaster {{ id }}?"
+      },
+      "detail": {
+        "title": "Citymaster"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cityCode": "City Code",
+      "status": "Status"
+    }
+  }
+}
