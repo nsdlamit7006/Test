@@ -1,0 +1,13 @@
+[1mdiff --git a/src/main/java/com/mycompany/myapp/web/rest/UserResource.java b/src/main/java/com/mycompany/myapp/web/rest/UserResource.java[m
+[1mindex e613cd3..bc47681 100644[m
+[1m--- a/src/main/java/com/mycompany/myapp/web/rest/UserResource.java[m
+[1m+++ b/src/main/java/com/mycompany/myapp/web/rest/UserResource.java[m
+[36m@@ -111,7 +111,7 @@[m [mpublic class UserResource {[m
+         log.debug("REST request to save User : {}", userDTO);[m
+ [m
+         if (userDTO.getId() != null) {[m
+[31m-            throw new BadRequestAlertException("A new user cannot already have an ID", "userManagement", "idexists");[m
+[32m+[m[32m            throw  new BadRequestAlertException("A new user cannot already have an ID", "userManagement", "idexists");[m
+             // Lowercase the user login before comparing with database[m
+         } else if (userRepository.findOneByLogin(userDTO.getLogin().toLowerCase()).isPresent()) {[m
+             throw new LoginAlreadyUsedException();[m
